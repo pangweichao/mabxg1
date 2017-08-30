@@ -7,7 +7,7 @@
  //var_dump("$_SERVER")
  //array_key_exists("PATH_INFO",$_SERVER)
  $dir='main';
- $filename='index';
+ $filename='login';
  if(array_key_exists('PATH_INFO', $_SERVER)){
     //获取URL的路径
  	$path=$_SERVER['PATH_INFO'];
