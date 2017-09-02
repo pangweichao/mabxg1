@@ -6,6 +6,27 @@ require.config({
         cookie:'jquery-cookie/jquery.cookie',
         template:'artTemplate/template-web',
     	common:'../js/common',
-    	login:'../js/login'
+    	login:'../js/login',
+    	index:'../js/index',
+    	bootstrap:'bootstrap/js/bootstrap.min',
+    	teacherlist:'../js/teacher-list',
+    	teacheradd:'../js/teacher-add',
+    	util:'../js/util',
+    	datepicker : 'bootstrap-datepicker/js/bootstrap-datepicker.min',
+        language : 'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+        validate:'validate/jquery-validate.min',
+        form:'jquery-form/jquery.form',
+
+    },
+    shim:{
+    	bootstrap:{
+    		deps:['jquery']
+    	},
+    	language:{
+    		deps:['datepicker','jquery']
+    	},
+    	validate:{
+    		deps:['jquery']
+    	}
     }
 })
